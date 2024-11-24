@@ -17,7 +17,7 @@
         img {
             width: 400px;
             height: 400px;
-            border-radius: 50%;
+            border-radius: 0;
             margin-bottom: 1rem;
         }
         .details {
@@ -25,12 +25,20 @@
             max-width: 500px;
         }
     </style>
+<style>
+        /* Ensure images remain square in lightbox and fullscreen */
+        .lightbox img {
+            border-radius: 0 !important;
+            width: auto !important;
+            height: auto !important;
+        }
+    </style>
 </head>
 <body>
     <nav style="background: #444; color: #fff; padding: 1rem; display: flex; justify-content: center; gap: 1rem;">
         <a href="index.html" style="color: #fff; text-decoration: none;">Home</a>
         <a href="el-shabeb.html" style="color: #fff; text-decoration: none;">El Shabeb</a>
-        <a href="#contact" style="color: #fff; text-decoration: none;">Contact</a>
+        <a href="majd-el-chami.html" style="color: #fff; text-decoration: none;">Contact</a>
     </nav>
     <img src="https://i.imgur.com/8BHuNR9.jpeg" alt="Mahdi Ammar">
     <div class="details">
@@ -38,7 +46,7 @@
         <p><strong>Nickname:</strong> Kheled, Jardon</p>
         <p><strong>About:</strong> It's said a hair fell from oh great hassan ammar's leg on a kilo of minced meat and thus Mahdi was born. If in need of connecting the mouse to the computer, ask him.</p>
     </div>
-    <div style="display: flex; flex-wrap: wrap; gap: 1rem; justify-content: center;">
+    <div id="mahdi-gallery" style="display: flex; flex-wrap: wrap; gap: 1rem; justify-content: center;">
         <a href="https://i.imgur.com/VgLOqld.jpeg" data-lightbox="mahdi-gallery" data-title="Mahdi Picture 1"><img src="https://i.imgur.com/VgLOqld.jpeg" alt="Mahdi Picture 1" style="width: 600px; height: 600px;"></a>
         <a href="https://i.imgur.com/VEPJ34l.jpeg" data-lightbox="mahdi-gallery" data-title="Mahdi Picture 2"><img src="https://i.imgur.com/VEPJ34l.jpeg" alt="Mahdi Picture 2" style="width: 600px; height: 600px;"></a>
         <a href="https://i.imgur.com/euOhytb.jpeg" data-lightbox="mahdi-gallery" data-title="Mahdi Picture 3"><img src="https://i.imgur.com/euOhytb.jpeg" alt="Mahdi Picture 3" style="width: 600px; height: 600px;"></a>
@@ -46,8 +54,26 @@
         <a href="https://i.imgur.com/pNaHeef.jpeg" data-lightbox="mahdi-gallery" data-title="Mahdi Picture 5"><img src="https://i.imgur.com/pNaHeef.jpeg" alt="Mahdi Picture 5" style="width: 600px; height: 600px;"></a>
         <a href="https://i.imgur.com/VgLOqld.jpeg" data-lightbox="mahdi-gallery" data-title="Mahdi Picture 6"><img src="https://i.imgur.com/VgLOqld.jpeg" alt="Mahdi Picture 6" style="width: 600px; height: 600px;"></a>
     </div>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/5.3.0/photoswipe.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/5.3.0/photoswipe-lightbox.min.js"></script>
+<script>
+    const lightbox = new PhotoSwipeLightbox({
+        gallery: '#mahdi-gallery',
+        children: 'a',
+        pswpModule: PhotoSwipe
+    });
+    lightbox.init();
+</script>
+    <script>
+        lightbox.option({
+            'resizeDuration': 200,
+            'wrapAround': true, // Allows navigation to next/previous images
+            'alwaysShowNavOnTouchDevices': true, // Ensures arrows are visible
+            'fadeDuration': 300,
+            'imageFadeDuration': 300
+        });
+    </script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/5.3.0/photoswipe.min.css" rel="stylesheet">
     <div style="margin-top: 2rem;">
         <video controls width="800" style="display: block; margin: 0 auto;">
             <source src="https://i.imgur.com/6IPuX6Y.mp4" type="video/mp4">
