@@ -1,4 +1,4 @@
-5<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -33,6 +33,20 @@
             height: auto !important;
         }
     </style>
+<style>
+        .pswp__button--close {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            background: rgba(0, 0, 0, 0.7);
+            color: #fff;
+            padding: 10px;
+            border: none;
+            border-radius: 50%;
+            cursor: pointer;
+            z-index: 9999;
+        }
+    </style>
 </head>
 <body>
     <nav style="background: #444; color: #fff; padding: 1rem; display: flex; justify-content: center; gap: 1rem;">
@@ -47,16 +61,16 @@
         <p><strong>About:</strong> It's said a hair fell from oh great hassan ammar's leg on a kilo of minced meat and thus Mahdi was born. If in need of connecting the mouse to the computer, ask him.</p>
     </div>
     <div id="mahdi-gallery" style="display: flex; flex-wrap: wrap; gap: 1rem; justify-content: center;">
-        <a href="https://i.imgur.com/ah2wdFz.jpeg" data-lightbox="mahdi-gallery" data-title="Mahdi Picture 1"><img src="https://i.imgur.com/ah2wdFz.jpeg" alt="Mahdi Picture 1" style="width: 500px; height: 500px;"></a>
-        <a href="https://i.imgur.com/CQpHbRA.jpeg" data-lightbox="mahdi-gallery" data-title="Mahdi Picture 2"><img src="https://i.imgur.com/CQpHbRA.jpeg" alt="Mahdi Picture 2" style="width: 500px; height: 500px;"></a>
-        <a href="https://i.imgur.com/0mQ3c9T.jpeg" data-lightbox="mahdi-gallery" data-title="Mahdi Picture 3"><img src="https://i.imgur.com/0mQ3c9T.jpeg" alt="Mahdi Picture 3" style="width: 500px; height: 500px;"></a>
-        <a href="https://i.imgur.com/DefKPXn.jpeg" data-lightbox="mahdi-gallery" data-title="Mahdi Picture 4"><img src="https://i.imgur.com/DefKPXn.jpeg" alt="Mahdi Picture 4" style="width: 500px; height: 500px;"></a>
-        <a href="https://i.imgur.com/IAC25EW.jpeg" data-lightbox="mahdi-gallery" data-title="Mahdi Picture 5"><img src="https://i.imgur.com/IAC25EW.jpeg" alt="Mahdi Picture 5" style="width: 500px; height: 500px;"></a>
-        <a href="https://i.imgur.com/Oayi3nR.jpeg" data-lightbox="mahdi-gallery" data-title="Mahdi Picture 6"><img src="https://i.imgur.com/Oayi3nR.jpeg" alt="Mahdi Picture 6" style="width: 500px; height: 500px;"></a>
-        <a href="https://i.imgur.com/WAsuqU8.jpeg" data-lightbox="mahdi-gallery" data-title="Mahdi Picture 7"><img src="https://i.imgur.com/WAsuqU8.jpeg" alt="Mahdi Picture 7" style="width: 500px; height: 500px;"></a>
-        <a href="https://i.imgur.com/DRZdI53.jpeg" data-lightbox="mahdi-gallery" data-title="Mahdi Picture 8"><img src="https://i.imgur.com/DRZdI53.jpeg" alt="Mahdi Picture 8" style="width: 500px; height: 500px;"></a>
-        <a href="https://i.imgur.com/LZhOYAx.jpeg" data-lightbox="mahdi-gallery" data-title="Mahdi Picture 9"><img src="https://i.imgur.com/LZhOYAx.jpeg" alt="Mahdi Picture 9" style="width: 500px; height: 500px;"></a>
-        <a href="https://i.imgur.com/8F7KcHL.jpeg" data-lightbox="mahdi-gallery" data-title="Mahdi Picture 10"><img src="https://i.imgur.com/8F7KcHL.jpeg" alt="Mahdi Picture 10" style="width: 500px; height: 500px;"></a>
+        <a href="#" data-pswp-width="500" data-pswp-height="500" data-pswp-src="https://i.imgur.com/ah2wdFz.jpeg" data-title="Mahdi Picture 1"><img src="https://i.imgur.com/ah2wdFz.jpeg" alt="Mahdi Picture 1" style="width: 500px; height: 500px;"></a>
+        <a href="#" data-pswp-width="500" data-pswp-height="500" data-pswp-src="https://i.imgur.com/CQpHbRA.jpeg" data-title="Mahdi Picture 2"><img src="https://i.imgur.com/CQpHbRA.jpeg" alt="Mahdi Picture 2" style="width: 500px; height: 500px;"></a>
+        <a href="#" data-pswp-width="500" data-pswp-height="500" data-pswp-src="https://i.imgur.com/0mQ3c9T.jpeg" data-title="Mahdi Picture 3"><img src="https://i.imgur.com/0mQ3c9T.jpeg" alt="Mahdi Picture 3" style="width: 500px; height: 500px;"></a>
+        <a href="#" data-pswp-width="500" data-pswp-height="500" data-pswp-src="https://i.imgur.com/DefKPXn.jpeg" data-title="Mahdi Picture 4"><img src="https://i.imgur.com/DefKPXn.jpeg" alt="Mahdi Picture 4" style="width: 500px; height: 500px;"></a>
+        <a href="#" data-pswp-width="500" data-pswp-height="500" data-pswp-src="https://i.imgur.com/IAC25EW.jpeg" data-title="Mahdi Picture 5"><img src="https://i.imgur.com/IAC25EW.jpeg" alt="Mahdi Picture 5" style="width: 500px; height: 500px;"></a>
+        <a href="#" data-pswp-width="500" data-pswp-height="500" data-pswp-src="https://i.imgur.com/Oayi3nR.jpeg" data-title="Mahdi Picture 6"><img src="https://i.imgur.com/Oayi3nR.jpeg" alt="Mahdi Picture 6" style="width: 500px; height: 500px;"></a>
+        <a href="#" data-pswp-width="500" data-pswp-height="500" data-pswp-src="https://i.imgur.com/WAsuqU8.jpeg" data-title="Mahdi Picture 7"><img src="https://i.imgur.com/WAsuqU8.jpeg" alt="Mahdi Picture 7" style="width: 500px; height: 500px;"></a>
+        <a href="#" data-pswp-width="500" data-pswp-height="500" data-pswp-src="https://i.imgur.com/DRZdI53.jpeg" data-title="Mahdi Picture 8"><img src="https://i.imgur.com/DRZdI53.jpeg" alt="Mahdi Picture 8" style="width: 500px; height: 500px;"></a>
+        <a href="#" data-pswp-width="500" data-pswp-height="500" data-pswp-src="https://i.imgur.com/LZhOYAx.jpeg" data-title="Mahdi Picture 9"><img src="https://i.imgur.com/LZhOYAx.jpeg" alt="Mahdi Picture 9" style="width: 500px; height: 500px;"></a>
+        <a href="#" data-pswp-width="500" data-pswp-height="500" data-pswp-src="https://i.imgur.com/8F7KcHL.jpeg" data-title="Mahdi Picture 10"><img src="https://i.imgur.com/8F7KcHL.jpeg" alt="Mahdi Picture 10" style="width: 500px; height: 500px;"></a>
     </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/5.3.0/photoswipe.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/5.3.0/photoswipe-lightbox.min.js"></script>
@@ -78,15 +92,26 @@
         });
     </script>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/5.3.0/photoswipe.min.css" rel="stylesheet">
-    <div style="margin-top: 2rem;">
-        <video controls width="500" style="display: block; margin: 0 auto;">
+    <div id="mahdi-gallery" style="display: flex; flex-wrap: wrap; gap: 1rem; justify-content: center;">
+        <a href="https://i.imgur.com/ah2wdFz.jpeg" data-lightbox="mahdi-gallery" data-title="Mahdi Picture 1"><img src="https://i.imgur.com/ah2wdFz.jpeg" alt="Mahdi Picture 1" style="width: 500px; height: 500px;"></a>
+        <a href="https://i.imgur.com/CQpHbRA.jpeg" data-lightbox="mahdi-gallery" data-title="Mahdi Picture 2"><img src="https://i.imgur.com/CQpHbRA.jpeg" alt="Mahdi Picture 2" style="width: 500px; height: 500px;"></a>
+        <a href="https://i.imgur.com/0mQ3c9T.jpeg" data-lightbox="mahdi-gallery" data-title="Mahdi Picture 3"><img src="https://i.imgur.com/0mQ3c9T.jpeg" alt="Mahdi Picture 3" style="width: 500px; height: 500px;"></a>
+        <a href="https://i.imgur.com/DefKPXn.jpeg" data-lightbox="mahdi-gallery" data-title="Mahdi Picture 4"><img src="https://i.imgur.com/DefKPXn.jpeg" alt="Mahdi Picture 4" style="width: 500px; height: 500px;"></a>
+        <a href="https://i.imgur.com/IAC25EW.jpeg" data-lightbox="mahdi-gallery" data-title="Mahdi Picture 5"><img src="https://i.imgur.com/IAC25EW.jpeg" alt="Mahdi Picture 5" style="width: 500px; height: 500px;"></a>
+        <a href="https://i.imgur.com/Oayi3nR.jpeg" data-lightbox="mahdi-gallery" data-title="Mahdi Picture 6"><img src="https://i.imgur.com/Oayi3nR.jpeg" alt="Mahdi Picture 6" style="width: 500px; height: 500px;"></a>
+        <a href="https://i.imgur.com/WAsuqU8.jpeg" data-lightbox="mahdi-gallery" data-title="Mahdi Picture 7"><img src="https://i.imgur.com/WAsuqU8.jpeg" alt="Mahdi Picture 7" style="width: 500px; height: 500px;"></a>
+        <a href="https://i.imgur.com/DRZdI53.jpeg" data-lightbox="mahdi-gallery" data-title="Mahdi Picture 8"><img src="https://i.imgur.com/DRZdI53.jpeg" alt="Mahdi Picture 8" style="width: 500px; height: 500px;"></a>
+        <a href="https://i.imgur.com/LZhOYAx.jpeg" data-lightbox="mahdi-gallery" data-title="Mahdi Picture 9"><img src="https://i.imgur.com/LZhOYAx.jpeg" alt="Mahdi Picture 9" style="width: 500px; height: 500px;"></a>
+        <a href="https://i.imgur.com/8F7KcHL.jpeg" data-lightbox="mahdi-gallery" data-title="Mahdi Picture 10"><img src="https://i.imgur.com/8F7KcHL.jpeg" alt="Mahdi Picture 10" style="width: 500px; height: 500px;"></a>
+        <video controls width="500" style="display: block;">
             <source src="https://i.imgur.com/QhrHPKS.mp4" type="video/mp4">
             Your browser does not support the video tag.
         </video>
-        <video controls width="500" style="display: block; margin: 0 auto; margin-top: 1rem;">
+        <video controls width="500" style="display: block;">
             <source src="https://i.imgur.com/uqIvQNv.mp4" type="video/mp4">
             Your browser does not support the video tag.
         </video>
     </div>
+    <button class="pswp__button--close" onclick="document.querySelector('.pswp').style.display = 'none';">×</button>
 </body>
 </html>
