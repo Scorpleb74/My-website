@@ -47,6 +47,23 @@
             z-index: 9999;
         }
     </style>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/5.3.0/photoswipe.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/5.3.0/photoswipe.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/5.3.0/photoswipe-lightbox.min.js"></script>
+    <style>
+        .pswp__button--close {
+            position: fixed;
+            top: 10px;
+            left: 10px;
+            background: rgba(0, 0, 0, 0.7);
+            color: white;
+            border: none;
+            border-radius: 50%;
+            padding: 10px;
+            cursor: pointer;
+            z-index: 10000;
+        }
+    </style>
 </head>
 <body>
     <nav style="background: #444; color: #fff; padding: 1rem; display: flex; justify-content: center; gap: 1rem;">
@@ -70,39 +87,6 @@
         <a href="#" data-pswp-width="500" data-pswp-height="500" data-pswp-src="https://i.imgur.com/WAsuqU8.jpeg" data-title="Mahdi Picture 7"><img src="https://i.imgur.com/WAsuqU8.jpeg" alt="Mahdi Picture 7" style="width: 500px; height: 500px;"></a>
         <a href="#" data-pswp-width="500" data-pswp-height="500" data-pswp-src="https://i.imgur.com/DRZdI53.jpeg" data-title="Mahdi Picture 8"><img src="https://i.imgur.com/DRZdI53.jpeg" alt="Mahdi Picture 8" style="width: 500px; height: 500px;"></a>
         <a href="#" data-pswp-width="500" data-pswp-height="500" data-pswp-src="https://i.imgur.com/LZhOYAx.jpeg" data-title="Mahdi Picture 9"><img src="https://i.imgur.com/LZhOYAx.jpeg" alt="Mahdi Picture 9" style="width: 500px; height: 500px;"></a>
-        <a href="#" data-pswp-width="500" data-pswp-height="500" data-pswp-src="https://i.imgur.com/8F7KcHL.jpeg" data-title="Mahdi Picture 10"><img src="https://i.imgur.com/8F7KcHL.jpeg" alt="Mahdi Picture 10" style="width: 500px; height: 500px;"></a>
-    </div>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/5.3.0/photoswipe.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/5.3.0/photoswipe-lightbox.min.js"></script>
-<script>
-    const lightbox = new PhotoSwipeLightbox({
-        gallery: '#mahdi-gallery',
-        children: 'a',
-        pswpModule: PhotoSwipe
-    });
-    lightbox.init();
-</script>
-    <script>
-        lightbox.option({
-            'resizeDuration': 200,
-            'wrapAround': true, // Allows navigation to next/previous images
-            'alwaysShowNavOnTouchDevices': true, // Ensures arrows are visible
-            'fadeDuration': 300,
-            'imageFadeDuration': 300
-        });
-    </script>
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/5.3.0/photoswipe.min.css" rel="stylesheet">
-    <div id="mahdi-gallery" style="display: flex; flex-wrap: wrap; gap: 1rem; justify-content: center;">
-        <a href="https://i.imgur.com/ah2wdFz.jpeg" data-lightbox="mahdi-gallery" data-title="Mahdi Picture 1"><img src="https://i.imgur.com/ah2wdFz.jpeg" alt="Mahdi Picture 1" style="width: 500px; height: 500px;"></a>
-        <a href="https://i.imgur.com/CQpHbRA.jpeg" data-lightbox="mahdi-gallery" data-title="Mahdi Picture 2"><img src="https://i.imgur.com/CQpHbRA.jpeg" alt="Mahdi Picture 2" style="width: 500px; height: 500px;"></a>
-        <a href="https://i.imgur.com/0mQ3c9T.jpeg" data-lightbox="mahdi-gallery" data-title="Mahdi Picture 3"><img src="https://i.imgur.com/0mQ3c9T.jpeg" alt="Mahdi Picture 3" style="width: 500px; height: 500px;"></a>
-        <a href="https://i.imgur.com/DefKPXn.jpeg" data-lightbox="mahdi-gallery" data-title="Mahdi Picture 4"><img src="https://i.imgur.com/DefKPXn.jpeg" alt="Mahdi Picture 4" style="width: 500px; height: 500px;"></a>
-        <a href="https://i.imgur.com/IAC25EW.jpeg" data-lightbox="mahdi-gallery" data-title="Mahdi Picture 5"><img src="https://i.imgur.com/IAC25EW.jpeg" alt="Mahdi Picture 5" style="width: 500px; height: 500px;"></a>
-        <a href="https://i.imgur.com/Oayi3nR.jpeg" data-lightbox="mahdi-gallery" data-title="Mahdi Picture 6"><img src="https://i.imgur.com/Oayi3nR.jpeg" alt="Mahdi Picture 6" style="width: 500px; height: 500px;"></a>
-        <a href="https://i.imgur.com/WAsuqU8.jpeg" data-lightbox="mahdi-gallery" data-title="Mahdi Picture 7"><img src="https://i.imgur.com/WAsuqU8.jpeg" alt="Mahdi Picture 7" style="width: 500px; height: 500px;"></a>
-        <a href="https://i.imgur.com/DRZdI53.jpeg" data-lightbox="mahdi-gallery" data-title="Mahdi Picture 8"><img src="https://i.imgur.com/DRZdI53.jpeg" alt="Mahdi Picture 8" style="width: 500px; height: 500px;"></a>
-        <a href="https://i.imgur.com/LZhOYAx.jpeg" data-lightbox="mahdi-gallery" data-title="Mahdi Picture 9"><img src="https://i.imgur.com/LZhOYAx.jpeg" alt="Mahdi Picture 9" style="width: 500px; height: 500px;"></a>
-        <a href="https://i.imgur.com/8F7KcHL.jpeg" data-lightbox="mahdi-gallery" data-title="Mahdi Picture 10"><img src="https://i.imgur.com/8F7KcHL.jpeg" alt="Mahdi Picture 10" style="width: 500px; height: 500px;"></a>
         <video controls width="500" style="display: block;">
             <source src="https://i.imgur.com/QhrHPKS.mp4" type="video/mp4">
             Your browser does not support the video tag.
@@ -112,6 +96,14 @@
             Your browser does not support the video tag.
         </video>
     </div>
-    <button class="pswp__button--close" onclick="document.querySelector('.pswp').style.display = 'none';">×</button>
+ onclick="document.querySelector('.pswp').style.display = 'none';">×</button>
+<script>
+        const lightbox = new PhotoSwipeLightbox({
+            gallery: '#mahdi-gallery',
+            children: 'a',
+            pswpModule: PhotoSwipe
+        });
+        lightbox.init();
+    </script>
 </body>
 </html>
