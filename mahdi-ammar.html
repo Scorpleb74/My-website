@@ -2,9 +2,51 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
     <title>Mahdi Ammar</title>
     <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 0;
+            padding: 1rem;
+            background: #f4f4f4;
+            overflow: hidden;
+        }
+        img {
+            max-width: 90%;
+            height: auto;
+            margin-bottom: 1rem;
+        }
+        .details {
+            text-align: left;
+            max-width: 90%;
+            font-size: 0.9rem;
+        }
+        #mahdi-gallery {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+            justify-content: center;
+        }
+        #mahdi-gallery img, #mahdi-gallery video {
+            max-width: 45%;
+            height: auto;
+        }
+        @media (max-height: 800px) {
+            body {
+                padding: 0.5rem;
+            }
+            .details {
+                font-size: 0.8rem;
+            }
+            #mahdi-gallery img, #mahdi-gallery video {
+                max-width: 40%;
+            }
+        }
+    
         /* General styling */
         body {
             font-family: Arial, sans-serif;
@@ -15,67 +57,7 @@
             padding: 2rem;
             background: #f4f4f4;
         }
-        img {
-            width: 400px;
-            height: 400px;
-            border-radius: 0;
-            margin-bottom: 1rem;
-        }
-        .details {
-            text-align: left;
-            max-width: 500px;
-        }
-        #mahdi-gallery {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 1rem;
-            justify-content: center;
-        }
-        #mahdi-gallery img, #mahdi-gallery video {
-            max-width: 500px;
-            max-height: 500px;
-            width: 100%;
-            height: auto;
-        }
-        video {
-            display: block;
-            margin: 1rem auto;
-        }
-
-        /* Responsive design adjustments */
-        @media (max-width: 768px) {
-            body {
-                padding: 1rem;
-            }
-            img {
-                width: 300px;
-                height: 300px;
-            }
-            .details {
-                max-width: 90%;
-            }
-            #mahdi-gallery img, #mahdi-gallery video {
-                width: 100%;
-                max-width: 300px;
-            }
-        }
-    </style>
-            img {
-                width: 300px;
-                height: 300px;
-            }
-            .details {
-                max-width: 90%;
-            }
-            #mahdi-gallery img {
-                width: 100%;
-                height: auto;
-                max-width: 300px;
-            }
-            video {
-                width: 100%;
-                max-width: 300px;
-            }
+        
         }
     </style>
         body {
@@ -88,9 +70,8 @@
             background: #f4f4f4;
         }
         img {
-            width: 400px;
-            height: 400px;
-            border-radius: 0;
+            max-width: 100%;
+            height: auto;
             margin-bottom: 1rem;
         }
         .details {
@@ -153,7 +134,7 @@
     <div id="mahdi-gallery" style="display: flex; flex-wrap: wrap; gap: 1rem; justify-content: center;">
         <a data-pswp-width="500" data-pswp-height="500" data-pswp-src="https://i.imgur.com/ah2wdFz.jpeg" data-title="Mahdi Picture 1">
             <img src="https://i.imgur.com/ah2wdFz.jpeg" alt="Mahdi Picture 1" style="width: 500px; height: 500px;">
-            <button style="position: absolute; bottom: 10px; left: 10px; background: rgba(0,0,0,0.7); color: #fff; border: none; border-radius: 5px; padding: 5px 10px; cursor: pointer;">Fullscreen</button>
+            
         </a>
         <a data-pswp-width="500" data-pswp-height="500" data-pswp-src="https://i.imgur.com/CQpHbRA.jpeg" data-title="Mahdi Picture 2"><img src="https://i.imgur.com/CQpHbRA.jpeg" alt="Mahdi Picture 2" style="width: 500px; height: 500px;"></a>
         <a data-pswp-width="500" data-pswp-height="500" data-pswp-src="https://i.imgur.com/0mQ3c9T.jpeg" data-title="Mahdi Picture 3"><img src="https://i.imgur.com/0mQ3c9T.jpeg" alt="Mahdi Picture 3" style="width: 500px; height: 500px;"></a>
@@ -163,7 +144,7 @@
         <a data-pswp-width="500" data-pswp-height="500" data-pswp-src="https://i.imgur.com/WAsuqU8.jpeg" data-title="Mahdi Picture 7"><img src="https://i.imgur.com/WAsuqU8.jpeg" alt="Mahdi Picture 7" style="width: 500px; height: 500px;"></a>
         <a data-pswp-width="500" data-pswp-height="500" data-pswp-src="https://i.imgur.com/DRZdI53.jpeg" data-title="Mahdi Picture 8"><img src="https://i.imgur.com/DRZdI53.jpeg" alt="Mahdi Picture 8" style="width: 500px; height: 500px;"></a>
         <a data-pswp-width="500" data-pswp-height="500" data-pswp-src="https://i.imgur.com/LZhOYAx.jpeg" data-title="Mahdi Picture 9"><img src="https://i.imgur.com/LZhOYAx.jpeg" alt="Mahdi Picture 9" style="width: 500px; height: 500px;"></a>
-    <video controls width="500" style="display: block; margin: 1rem auto;">
+    <video controls style="max-width: 100%; height: auto; margin: 1rem auto;" style="display: block; margin: 1rem auto;">
             <source src="https://i.imgur.com/QhrHPKS.mp4" type="video/mp4">
             Your browser does not support the video tag.
         </video>
